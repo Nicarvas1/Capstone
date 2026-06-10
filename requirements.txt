@@ -1,0 +1,7 @@
+streamlit
+docxtpl
+langchain-ollama
+langchain-community
+docx2txt
+pypdf
+chromadb

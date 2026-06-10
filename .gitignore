@@ -1,0 +1,21 @@
+# Entorno virtual
+env/
+venv/
+ENV/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Documentos temporales y generados
+temp/
+scratch/
+informes_generados/
+*.docx
+!planillas/*.docx # Conservar la plantilla en la carpeta planillas
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
