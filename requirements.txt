@@ -1,3 +1,4 @@
+# ── Streamlit app ──────────────────────────────────────────────────────────────
 streamlit
 docxtpl
 langchain-ollama
@@ -5,3 +6,17 @@ langchain-community
 docx2txt
 pypdf
 chromadb
+
+# ── LLM / IA ───────────────────────────────────────────────────────────────────
+# Ollama debe estar instalado por separado: https://ollama.com
+# Luego ejecutar: ollama pull llama3.1   (o llama3.2 para PCs con 4 GB VRAM)
+
+# ── Reconocimiento de voz (Whisper) ────────────────────────────────────────────
+openai-whisper   # STT local — descarga el modelo la primera vez (~244 MB para "small")
+soundfile        # Leer archivos de audio sin ffmpeg
+scipy            # Resampleo de audio a 16 000 Hz
+
+# ── Asistente de voz (FastAPI) ─────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+pyttsx3          # TTS local opcional (usa voces del sistema Windows)

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asistente PIE — Voz</title>
+  <meta name="description" content="Asistente conversacional local para generar informes PIE por voz o texto.">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────────────────── -->
+<header>
+  <div class="header-left">
+    <span class="logo">🎙️</span>
+    <h1>Asistente PIE — Informe a la Familia</h1>
+  </div>
+
+  <div class="stage-pills">
+    <span class="pill active" id="pill-1">① Estudiante</span>
+    <span class="pill"        id="pill-2">② Profesional</span>
+    <span class="pill"        id="pill-3">③ Apoderado</span>
+    <span class="pill"        id="pill-4">④ Generar</span>
+  </div>
+
+  <div class="header-right">
+    <button id="tts-btn" title="Activar respuestas en voz (opcional)">🔇 Voz IA</button>
+    <button id="reset-btn" title="Iniciar nuevo informe">🔄 Nuevo</button>
+    <span id="conn-dot"></span>
+    <span id="conn-label">Desconectado</span>
+  </div>
+</header>
+
+<!-- ── CHAT ────────────────────────────────────────────────────────── -->
+<div id="chat"></div>
+
+<!-- ── BOTTOM PANEL ────────────────────────────────────────────────── -->
+<div id="bottom">
+  <div id="waveform"></div>
+
+  <div id="status-row">
+    <span id="status-icon">⏳</span>
+    <span id="status-text">Iniciando micrófono...</span>
+  </div>
+
+  <div id="input-row">
+    <textarea id="text-input" rows="1" placeholder="Escribe tu mensaje y presiona Enter (Shift+Enter = nueva línea)..."></textarea>
+    <button id="send-btn">Enviar</button>
+
+    <div id="mic-area">
+      <button id="mic-btn" disabled title="Mantén presionado para hablar">🎤</button>
+      <span id="mic-label">Mantén para hablar</span>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
